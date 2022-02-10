@@ -1,5 +1,7 @@
 
-
+#site{
+	min-width: 800px;
+}
 body {
 	margin: 0;
 	 font-family:'Fairymuffinroundpop' ; 
@@ -10,8 +12,8 @@ body {
 
 
 .top{
-	width: 2000px;
-	min-width: 2000px;
+	width: 100%;
+	min-width: 100%;
 	height: 400px;
 	margin: 0;
 	margin-top: 0;
@@ -176,7 +178,7 @@ input[type="date"]{
 
 
 .description {
-  width: 2000px;
+  width: 100%;
   height: 80px;
   display: inline-block;
   border: none;
@@ -197,7 +199,7 @@ input[type="date"]{
 
 
 .description-alt {
-  width: 2000px;
+  width: 100%;
   height: 80px;
   display: inline-block;
   border: none;
