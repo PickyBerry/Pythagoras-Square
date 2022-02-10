@@ -10,8 +10,8 @@ body {
 
 
 .top{
-	width: 100%;
-	min-width: 100%;
+	width: 2000px;
+	min-width: 2000px;
 	height: 400px;
 	margin: 0;
 	margin-top: 0;
@@ -174,7 +174,7 @@ input[type="date"]{
 
 
 .description {
-  width: 100%;
+  width: 2000px;
   height: 80px;
   display: inline-block;
   border: none;
@@ -195,7 +195,7 @@ input[type="date"]{
 
 
 .description-alt {
-  width: 100%;
+  width: 2000px;
   height: 80px;
   display: inline-block;
   border: none;
