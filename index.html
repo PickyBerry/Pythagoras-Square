@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"  href="assets/css/style.css">
+	<title>Document</title>
+</head>
+<body>
+
+<div class="top">
+  <div> <img style="margin-top:35px;" src="assets/img/avatar.jpg" class="avatar" align="middle"></div>
+  <div style="text-align: left; width: 300px;"><br> <br> <br> <br>Привет! Меня зовут Юлия и я специалист по нумерологии. Ниже вы можете воспользоваться расчётом матрицы личности по квадрату Пифагора. Для более подробного разбора результатов обращайтесь ко мне в инстаграм @**********</div>
+	  
+	</div>
+
+	<h1>РАСЧЁТ ВАШЕЙ ПСИХОМАТРИЦЫ<br>ПО КВАДРАТУ ПИФАГОРА</h1>
+
+
+
+<form action="#" method="#" id="form">
+<div align="center">
+      <label >
+        Дата рождения:
+        <input type="date" name="day" value="" id="input" class="dateinput">  
+
+</div>
+
+  </form>
+
+<div align="center" class="resultbutton" >
+      <button onclick="doublenumber()" class="bot2">Рассчитать матрицу</button>
+      </div>
+
+
+
+<div  class="matrixdiv" align="center" >
+	<table  class="matrix" cellspacing="10">
+		 <col span="4">
+		<tr>
+			<td class="matrixelement1">Характер<br><div id="one"></div> </td>
+			<td class="matrixelement1">Здоровье<br><div id="four"></div> </td>
+			<td class="matrixelement1">Удача<br><div id="seven"></div> </td>
+			<td class="matrixelement2">Цель<br><div id="goal"></div> </td>
+		</tr>
+		<tr>
+			<td class="matrixelement1">Энергия<br><div id="two"></div></td>
+			<td class="matrixelement1">Логика<br><div id="five"></div></td>
+			<td class="matrixelement1">Долг<br><div id="eight"></div></td>
+			<td class="matrixelement2">Семья<br><div id="family"></div></td>
+		</tr>
+		<tr>
+			<td class="matrixelement1">Интерес<br><div id="three"></div></td>
+			<td class="matrixelement1">Труд<br><div id="six"></div></td>
+			<td class="matrixelement1">Память<br><div id="nine"></div></td>
+			<td class="matrixelement2">Привычки<br><div id="habits"></div></td>
+		</tr>
+		<tr>
+			<td class="matrixelement2">Самооценка<br><div id="confidence"></div></td>
+			<td class="matrixelement2">Деньги<br><div id="money"></div></td>
+			<td class="matrixelement2">Талант<br><div id="talent"></div></td>
+		</tr>
+	</table>
+</div>
+
+
+<div align="center" style="margin-top:75px; font-size: 35px;">ОСНОВНЫЕ ХАРАКТЕРИСТИКИ</div>
+<div align="center">(чем больше цифр в ячейке, тем значительней выражено качество)</div>
+ <div class="description"><div class="number">1</div><div class="description-inner">ПОКАЗАТЕЛЬ ХАРАКТЕРА, СИЛЫ ВОЛИ </div><div class="description-inner" id="desc_one"></div></div>
+ <div class="description"><div class="number">2</div><div class="description-inner">ПОКАЗАТЕЛЬ ЖИЗНЕННОЙ ЭНЕРГЕТИКИ, РАЗМЕРА ЭНЕРГЕТИЧЕСКОГО ЗАПАСА</div><div class="description-inner" id="desc_two"></div></div>
+ <div class="description"><div class="number">3</div><div class="description-inner">ПОКАЗАТЕЛЬ СКЛОННОСТИ К ТЕХНИЧЕСКИМ НАУКАМ</div><div class="description-inner" id="desc_three"></div></div>
+ <div class="description"><div class="number">4</div><div class="description-inner">ПОКАЗАТЕЛЬ ЗДОРОВЬЯ, ЗАЛОЖЕННОГО ПРИРОДОЙ</div><div class="description-inner" id="desc_four"></div></div>
+ <div class="description"><div class="number">5</div><div class="description-inner">ПОКАЗАТЕЛЬ ЭКСТРАСЕНСОРНЫХ СПОСОБНОСТЕЙ, ИНТУИЦИИ</div><div class="description-inner" id="desc_five"></div></div>
+ <div class="description"><div class="number">6</div><div class="description-inner">ПОКАЗАТЕЛЬ СПОСОБНОСТИ К ФИЗИЧЕСКОМУ ТРУДУ</div><div class="description-inner" id="desc_six"></div></div>
+ <div class="description"><div class="number">7</div><div class="description-inner">ПОКАЗАТЕЛЬ УДАЧИ, ВЕЗЕНИЯ </div><div class="description-inner" id="desc_seven"></div></div>
+ <div class="description"><div class="number">8</div><div class="description-inner">ПОКАЗАТЕЛЬ ОТВЕТСТВЕННОСТИ, ЧУВСТВА ДОЛГА</div><div class="description-inner" id="desc_eight"></div></div>
+ <div class="description"><div class="number">9</div><div class="description-inner">ПОКАЗАТЕЛЬ ИНТЕЛЛЕКТА, ПАМЯТИ</div><div class="description-inner" id="desc_nine"></div></div>
+
+<div align="center" style="margin-top:75px; font-size: 35px;">ДОПОЛНИТЕЛЬНЫЕ ХАРАКТЕРИСТИКИ</div>
+<div align="center">(чем больше значение, тем значительней выражено качество)</div>
+<div class="description-alt"><div class="number2">1-2-3</div><div class="description-inner">ПОКАЗАТЕЛЬ САМООЦЕНКИ </div><div class="description-inner" id="desc_confidence"></div></div>
+<div class="description-alt"><div class="number2">4-5-6</div><div class="description-inner">ПОКАЗАТЕЛЬ СПОСОБНОСТИ ЗАРАБАТЫВАТЬ ДЕНЬГИ </div><div class="description-inner" id="desc_money"></div></div>
+<div class="description-alt"><div class="number2">7-8-9</div><div class="description-inner">ПОКАЗАТЕЛЬ ПОТЕНЦИАЛА РАЗВИТИЯ ТАЛАНТА</div><div class="description-inner" id="desc_talent"></div></div>
+<div class="description-alt"><div class="number2">1-4-7</div><div class="description-inner">ПОКАЗАТЕЛЬ ЦЕЛЕУСТРЕМЛЁННОСТИ И АМБИЦИОЗНОСТИ </div><div class="description-inner" id="desc_goal"></div></div>
+<div class="description-alt"><div class="number2">2-5-8</div><div class="description-inner">ПОКАЗАТЕЛЬ ЗНАЧИМОСТИ СЕМЕЙНЫХ ЦЕННОСТЕЙ </div><div class="description-inner" id="desc_family"></div></div>
+<div class="description-alt"><div class="number2">3-6-9</div><div class="description-inner">ПОКАЗАТЕЛЬ СТАБИЛЬНОСТИ И ПРИВЫКАНИЯ </div><div class="description-inner" id="desc_habits"></div></div>
+
+
+
+
+<script>
+function doublenumber(){
+	var date=document.getElementById("input").value;
+	var stringArray = Array.from(date);
+	let numbers=new Array();
+   for (i=0;i<10;i++)  numbers[i]="";
+
+
+
+	var firstNum=0;
+	for (i = 0; i<stringArray.length; i++){
+   if ((i!=4)&&(i!=7)) {
+   	firstNum += Number(stringArray[i]);
+   	numbers[Number(stringArray[i])]+=Number(stringArray[i]).toString();
+    }
+   }
+
+
+	var secondNum;
+	if (firstNum>9){
+		secondNum=Math.floor(firstNum/10)+firstNum%10;
+		numbers[Math.floor(firstNum/10)]+=Math.floor(firstNum/10).toString();
+		numbers[firstNum%10]+=(firstNum%10).toString();
+	}
+	else{
+		secondNum=firstNum;
+		numbers[firstNum]+=firstNum.toString();
+	}
+
+	if (secondNum>9){
+		numbers[Math.floor(secondNum/10)]+=Math.floor(secondNum/10).toString();
+		numbers[secondNum%10]+=(secondNum%10).toString();
+	}
+	else{
+		numbers[secondNum]+=secondNum.toString();
+	}
+
+
+
+	var thirdNum;
+	if (stringArray[8]!=0) thirdNum=Math.abs(firstNum-Number(stringArray[8])*2);
+	else thirdNum=Math.abs(firstNum-Number(stringArray[9]));
+
+
+
+
+	var fourthNum;
+	if (thirdNum>9){
+		fourthNum=Math.floor(thirdNum/10)+thirdNum%10;
+		numbers[Math.floor(thirdNum/10)]+=Math.floor(thirdNum/10).toString();
+		numbers[thirdNum%10]+=(thirdNum%10).toString();
+	}
+	else{
+		fourthNum=thirdNum;
+		numbers[thirdNum]+=thirdNum.toString();
+	}
+	if (fourthNum>9){
+		numbers[Math.floor(fourthNum/10)]+=Math.floor(fourthNum/10).toString();
+		numbers[fourthNum%10]+=(fourthNum%10).toString();
+	}
+	else{
+		numbers[fourthNum]+=fourthNum.toString();
+	}
+
+
+
+
+document.getElementById("goal").innerHTML=numbers[1].length+numbers[4].length+numbers[7].length;
+document.getElementById("desc_goal").innerHTML="("+(numbers[1].length+numbers[4].length+numbers[7].length).toString()+")";
+
+document.getElementById("family").innerHTML=numbers[2].length+numbers[5].length+numbers[8].length;
+document.getElementById("desc_family").innerHTML="("+(numbers[2].length+numbers[5].length+numbers[8].length).toString()+")";
+
+document.getElementById("habits").innerHTML=numbers[3].length+numbers[6].length+numbers[9].length;
+document.getElementById("desc_habits").innerHTML="("+(numbers[3].length+numbers[6].length+numbers[9].length).toString()+")";
+
+document.getElementById("confidence").innerHTML=numbers[1].length+numbers[2].length+numbers[3].length;
+document.getElementById("desc_confidence").innerHTML="("+(numbers[1].length+numbers[2].length+numbers[3].length).toString()+")";
+
+document.getElementById("money").innerHTML=numbers[4].length+numbers[5].length+numbers[6].length;
+document.getElementById("desc_money").innerHTML="("+(numbers[4].length+numbers[5].length+numbers[6].length).toString()+")";
+
+document.getElementById("talent").innerHTML=numbers[7].length+numbers[8].length+numbers[9].length;
+document.getElementById("desc_talent").innerHTML="("+(numbers[7].length+numbers[8].length+numbers[9].length).toString()+")";
+
+
+
+for (i=0;i<10;i++) if (numbers[i]=="") numbers[i]="-";
+document.getElementById("one").innerHTML=numbers[1];
+document.getElementById("desc_one").innerHTML="("+numbers[1]+")";
+
+document.getElementById("two").innerHTML=numbers[2];
+document.getElementById("desc_two").innerHTML=" ("+numbers[2]+")";
+
+document.getElementById("three").innerHTML=numbers[3];
+document.getElementById("desc_three").innerHTML=" ("+numbers[3]+")";
+
+document.getElementById("four").innerHTML=numbers[4];
+document.getElementById("desc_four").innerHTML=" ("+numbers[4]+")";
+
+document.getElementById("five").innerHTML=numbers[5];
+document.getElementById("desc_five").innerHTML=" ("+numbers[5]+")";
+
+document.getElementById("six").innerHTML=numbers[6];
+document.getElementById("desc_six").innerHTML=" ("+numbers[6]+")";
+
+document.getElementById("seven").innerHTML=numbers[7];
+document.getElementById("desc_seven").innerHTML=" ("+numbers[7]+")";
+
+document.getElementById("eight").innerHTML=numbers[8];
+document.getElementById("desc_eight").innerHTML=" ("+numbers[8]+")";
+
+document.getElementById("nine").innerHTML=numbers[9];
+document.getElementById("desc_nine").innerHTML=" ("+numbers[9]+")";
+
+
+
+}
+</script>
+
+
+
+
+</body>
+</html>
