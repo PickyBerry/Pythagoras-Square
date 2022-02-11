@@ -1,6 +1,6 @@
 
 #site{
-	min-width: 1000px;
+	min-width: 1500px;
 }
 body {
 	margin: 0;
@@ -13,7 +13,7 @@ body {
 
 .top{
 	width: 100%;
-	min-width: 1000px;
+	min-width: 1500px;
 	height: 400px;
 	margin: 0;
 	margin-top: 0;
@@ -179,7 +179,7 @@ input[type="date"]{
 
 .description {
   width: 100%;
-  min-width: 1000px;
+  min-width: 1500px;
   height: 80px;
   display: inline-block;
   border: none;
@@ -201,7 +201,7 @@ input[type="date"]{
 
 .description-alt {
   width: 100%;
-  min-width: 1000px;
+  min-width: 1500px;
   height: 80px;
   display: inline-block;
   border: none;
